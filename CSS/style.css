@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Suwannaphum&display=swap');
+/* esse import é pela fonte utilizada na navbar. Professor
+disse que geralmente ela é posta na primira linha do CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* O '*' é um seletor que seleciona todos os elementos dos HTML. 
+Nessa situaçao, ele está resetando algumas configurações do HTML.
+    'Margin' é para zerar as margens da página, para não ficar aquela
+faixa branca.
+    'Padding' é uma 'borda interna', que define a distância do
+conteúdo em relação a borda.
+    'Box-sizing' é a medida de um elemento*/
+
+header {
+    background-color: #E6E8FF;
+}
+/* Esse 'header' na verdade é um seletor de tag. Isso significa
+que ele pega todas as tags da página destino que contenham,
+nesse caso, a tag 'header, e aplica esse estilo para elas.
+Se a tag fosse 'a', ele aplicaria em todos os 'a', e assim por
+diante.*/
+
+.sup {
+    height: 135px;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+
+.inf {
+    height: 85px;
+}
+/* sup e inf sao para definir a altura de cada container 
+dentro do header */
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+    /* O width é o tamanho do container da logo + searchbar + login em pixels*/
+    /* Margin define a centralização do objeto, onde '0' é para margem vertical
+    e 'auto' está no campo da margem horizontal. Como está, ele vai ter valor 0
+    na margem vertical e terá um valor de margem automático para o horizontal*/
+}
+
+.posicionamento-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*  Essa classe 'posicionamento-header' foi posta também lá no div
+do header, no HTML. Ela muda o posicionamento dos elementos no header.
+Antes, a logo, a searchbar e o login estavam um em cima
+do outro. Agora, estão um ao lado do outro, pois foi utilizado o
+'space-between'. O 'display: flex' serve para deixar em flexbox
+O align-items e para centralizar os elementos verticalmente.
+ */
+
+.posicionamento-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-grid-navbar {
+    width: 1059px;
+    margin: 0 auto;
+    align-items: center;
+}
+/* Esse container-grid-navbar e praticamente uma copia
+do primeiro container-grid*/
+
+.menu a {
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Suwannaphum', serif;
+    font-size: 30px;
+}
+/* Aqui e especificado que, para a classe 'menu', os
+elemento que serao editados por esse codigo sao os 'a'
+Alem disso, a cor da fonte dessa classe e definida por 'color',
+e a decoracao do texto (sublinhado, por exemplo) e definida
+como 'none' (nenhuma)
+O text-transform e para mudar o estilo da letra, como tudo maiusculo
+(uppercase), tudo minusculo (lowercase), capitalize (deixa a primeira
+letra de cada palavra em maiusculo)*/
+
+.banner {
+    background-image: url(../Imagens/Background-banner.red.png);
+    height: 818px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}   
+
+
+/* O 'backgorund-image' é usado para definir a imagem de fundo.
+A url é o diretório do arquivo que será usado. 
+Na url, foi usado o "../", pois quando se usa o control + espaço
+o programa procura pela pasta onde está o arquivo css. No entanto,
+o arquivo css está em uma pasta diferete da pasta iamgens, que era
+onde estavam sendo salvas as imagens. Por isso os dois pontos: eles
+'sobem' uma pasta dentro do diretório e acessam outra, nesse caso,
+a de imagens, e então sim vão para a imagem selecionada. Podem ser
+usados mais '../' para retornar ainda mais pastas.*/
+/* Depois de fazer todo esse processo para colocar a imagem como de fundo,
+a imagem em si ainda não aparece, pois a div, nesse momento, não
+tem conteúdo, e por isso não há background: pois não há o que mostrar.
+Por esse motivo é que devemos de coloar o 'height': para que
+ele comece a mostrar pelo menos o background*/
+/* Quando o back começa a aparecer, ele fica com várias repetições.
+Isso é normal do código. Para retirar isso, foi usado o
+'background-repeat: no-repeat'*/
+/* O 'background-size' define o tamanho do mesmo; 'cover'
+é para cobrir toda a extensão. Dessa maneira, não ficam espaços
+sobrando nas laterias do back (apesar de que meu back já estava ajustado)*/
+
+.itens-banner {
+    height: 100%;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-banner {
+    width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/* 'justify-content' funciona para alinhamento horizontal,
+enquanto 'align-items' para alinhamento vertical */
+/* o height em 100% é para que essa classe tenha 100%
+do tamanho da class banner, na div pai */
+
+.texto-banner {
+    width: 519px;
+    color: white;
+    text-decoration: none;
+}
+/* width é a largura do texto no figma */
+
+.texto-discover {
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+
+.texto-meio {
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 35px;
+}
+
+.texto-link a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px; 
+}
+/* Aqui eu tive que especificar que era o elemento 'a', um link,
+que teria seu estilo mudado, pois não ia de jeito nenhum */
+
+.back-destaque {
+    height: 123px;
+    background-color: #BDBDBD;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+.txt-destaque-grid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-destaque-grid p {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.estilo-destaque {
+    border-top-color: black;
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.back-destaque-up {
+    height: 600px;
+    background-color: #E6E8FF;
+}
+
+.back-destaque-down {
+    height: 1170px;
+    background-color: #E6E8FF;
+}
+
+.container-produtos {
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.jogos {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jogos img {
+    width: 270px;
+    height: 400px;
+}
+
+.bg-footer {
+    background-color: #11112C;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-footer {
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.container-footer-up {
+    width: 100%;
+    height: 356px;
+    display: flex;
+    align-content: space-around;
+    
+}
+
+.container-redes {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.container-links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.links-footer a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    
+}
+
+.fim-footer {
+    color: white;
+    text-align: center;
+    line-height: 16px;
+}
+
+.fim-footer a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+.separador-first {
+    padding-right: 0.6em;
+}
+
+.separador {
+    border-left: 1px solid #999;
+    padding: 0.6em;
+}
+
+.separador:nth-child(4) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+   }
+
+a.separador:nth-child(5) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}  
+
+.fim-footer > p:nth-child(7) {
+    padding-top: 16px;
+}
+
+.container-copy {
+    width: 100%;
+    height: 166px;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid {
+        width: 90%;
+    }
+}
+
+
+/* código para fazer um pseudo-botão:
+
+.botao {
+    background-color: red:
+    color: white ; (da fonte)
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px (margem interna)
+    border-radius: 5px; (config de bordas);
+}
+
+o botão deve de ser feito com um elemento <a></a>,
+com o texto dentro do elemento e o link da página,
+
+*/
+/* para ajustes finos das posições dos elementos,
+os professores recomendam a utilização do padding
+e margin ao invés de position */
