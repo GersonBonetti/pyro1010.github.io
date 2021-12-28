@@ -42,15 +42,6 @@ diante.*/
 /* sup e inf sao para definir a altura de cada container 
 dentro do header */
 
-.container-grid {
-    width: 1200px;
-    margin: 0 auto;
-    /* O width é o tamanho do container da logo + searchbar + login em pixels*/
-    /* Margin define a centralização do objeto, onde '0' é para margem vertical
-    e 'auto' está no campo da margem horizontal. Como está, ele vai ter valor 0
-    na margem vertical e terá um valor de margem automático para o horizontal*/
-}
-
 .posicionamento-header {
     display: flex;
     justify-content: space-between;
@@ -66,16 +57,9 @@ O align-items e para centralizar os elementos verticalmente.
 
 .posicionamento-navbar {
     display: flex;
-    justify-content: space-between;
-}
-
-.container-grid-navbar {
-    width: 1059px;
-    margin: 0 auto;
+    justify-content: space-around;
     align-items: center;
 }
-/* Esse container-grid-navbar e praticamente uma copia
-do primeiro container-grid*/
 
 .menu a {
     color:black;
@@ -332,11 +316,27 @@ a.separador:nth-child(5) {
     height: 166px;
 }
 
-@media screen and (max-width: 1200px) {
-    .container-grid {
-        width: 90%;
-    }
-}
+
+/* ----------------INÍCIO MEDIA QUERIES----------------*/
+
+
+/* Dispositivos extra pequenos (celulares menores que 576px) */
+@media (max-width: 575.98px) { ... }
+
+/* Dispositivos pequenos (celulares modo paisagem, 576px e acima) */
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+/* Dispositivos medianos (tablets, 768px e acima) */
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/* Dispossitivos grandes (desktops, 992px e acima) */
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/* Dispositivos extra grandes (grandes desktops, 1200px e acima) */
+@media (min-width: 1200px) { ... }
+
+/* ----------------FINAL MEDIA QUERIES---------------- */
+
 
 
 /* código para fazer um pseudo-botão:
