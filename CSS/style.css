@@ -68,6 +68,64 @@ O align-items e para centralizar os elementos verticalmente.
     font-family: 'Suwannaphum', serif;
     font-size: 30px;
 }
+
+/* AREA PARA MENU HAMBURGUER */
+
+#checkbox-menu {
+    opacity: 0;
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 40px;
+}
+
+label span {
+    position: absolute;
+    display: flex;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: black;
+    transition: 0.25s ease-in-out
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+
+label span:nth-child(2){
+    top: 12px;
+}
+
+label span:nth-child(3){
+    top: 24px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;    
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+
+
+/* AREA PARA MENU HAMBURGUER */
+
+
+
 /* Aqui e especificado que, para a classe 'menu', os
 elemento que serao editados por esse codigo sao os 'a'
 Alem disso, a cor da fonte dessa classe e definida por 'color',
@@ -321,19 +379,154 @@ a.separador:nth-child(5) {
 
 
 /* Dispositivos extra pequenos (celulares menores que 576px) */
-@media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) {
+
+    .sup {
+        height: 55px;
+        border-bottom-width: none;
+        border-bottom-style: none;
+        border-bottom-color: none;
+    }
+
+    .login-tablet {
+        display: none;
+    }
+
+    .login-desktop {
+        display: none;
+    }
+
+    .logo-tablet {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .barra-de-busca {
+        display: none;
+    }
+
+    .posicionamento-navbar{
+        display: none;
+    }
+
+    .logo-celular {
+        max-width: 80%;
+        height: auto;
+    }
+
+}
 
 /* Dispositivos pequenos (celulares modo paisagem, 576px e acima) */
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .sup {
+        height: 110px;
+        border-bottom-width: none;
+        border-bottom-style: none;
+        border-bottom-color: none;
+    }
+
+    .login-desktop {
+        display: none;
+    }
+
+    .logo-tablet {
+        display: none;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .barra-de-busca {
+        display: none;
+    }
+
+    .posicionamento-navbar{
+        display: none;
+    } 
+
+}
 
 /* Dispositivos medianos (tablets, 768px e acima) */
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .posicionamento-navbar{
+        display: none;
+    }       
 
-/* Dispossitivos grandes (desktops, 992px e acima) */
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+    .sup {
+        height: 110px;
+        border-bottom-width: none;
+        border-bottom-style: none;
+        border-bottom-color: none;
+    }
+    
+    .barra-de-busca {
+        display: none;
+    }
+    
+    .login-desktop {
+        display: none;
+    }
 
-/* Dispositivos extra grandes (grandes desktops, 1200px e acima) */
-@media (min-width: 1200px) { ... }
+    .logo-desktop {
+        display: none;
+    }
+
+    .login-tablet {
+        width: 59.64px;
+        height: 59.64px;
+    }
+
+    .logo-celular {
+        display: none;
+    }
+
+}
+
+/* Dispositivos grandes (desktops, 992px e acima) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .login-tablet {
+        display: none;
+    }
+    
+    .logo-tablet {
+        display: none;
+    }
+
+    .logo-celular {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .login-tablet {
+        display: none;
+    }
+
+    .logo-tablet {
+        display: none;
+    }
+
+    .logo-celular {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+}
+
 
 /* ----------------FINAL MEDIA QUERIES---------------- */
 
