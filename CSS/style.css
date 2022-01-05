@@ -417,6 +417,36 @@ a.separador:nth-child(5) {
         height: auto;
     }
 
+    label {
+        /* cursor: pointer;
+        position: relative;
+        display: flex; */
+        height: 20px;
+        width: 40px;
+    }
+    
+    label span {
+        /* position: absolute;
+        display: flex; */
+        height: 6px;
+        width: 100%;
+        border-radius: 30px;
+        /* background: black;
+        transition: 0.25s ease-in-out */
+    }
+
+    /* area nova */
+    .posicionamento-header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    label.menu-hamburguer {
+        padding-bottom: 30px;
+    }
+    /* area nova */
+       
+
 }
 
 /* Dispositivos pequenos (celulares modo paisagem, 576px e acima) */
@@ -433,7 +463,7 @@ a.separador:nth-child(5) {
         display: none;
     }
 
-    .logo-tablet {
+    .logo-celular {
         display: none;
     }
 
@@ -449,6 +479,9 @@ a.separador:nth-child(5) {
         display: none;
     } 
 
+    .login-celular {
+        display: none;
+    }
 }
 
 /* Dispositivos medianos (tablets, 768px e acima) */
@@ -485,6 +518,10 @@ a.separador:nth-child(5) {
         display: none;
     }
 
+    .login-celular {
+        display: none;
+    }
+
 }
 
 /* Dispositivos grandes (desktops, 992px e acima) */
@@ -506,6 +543,10 @@ a.separador:nth-child(5) {
         display: none;
     }
 
+    .login-celular {
+        display: none;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -523,6 +564,10 @@ a.separador:nth-child(5) {
     }
 
     .menu-hamburguer {
+        display: none;
+    }
+
+    .login-celular {
         display: none;
     }
 }
