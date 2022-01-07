@@ -174,7 +174,7 @@ sobrando nas laterias do back (apesar de que meu back já estava ajustado)*/
 }
 
 .container-banner {
-    width: 1220px;
+    width: 95%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -418,24 +418,17 @@ a.separador:nth-child(5) {
     }
 
     label {
-        /* cursor: pointer;
-        position: relative;
-        display: flex; */
         height: 20px;
         width: 40px;
     }
     
     label span {
-        /* position: absolute;
-        display: flex; */
         height: 6px;
         width: 100%;
         border-radius: 30px;
-        /* background: black;
-        transition: 0.25s ease-in-out */
+      
     }
 
-    /* area nova */
     .posicionamento-header {
         padding-left: 20px;
         padding-right: 20px;
@@ -444,9 +437,35 @@ a.separador:nth-child(5) {
     label.menu-hamburguer {
         padding-bottom: 30px;
     }
-    /* area nova */
-       
+    
+    .banner {
+        background-image: url(../Imagens/Imagem\ Tocha-tablet.png);
+        width: 100%;
+        height: 290px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
 
+    .container-banner {
+        align-items: center;
+    }
+
+    .texto-banner {
+        width: 95%;
+    }
+
+    .texto-discover h1 {
+        font-size: 20px;
+    }
+    
+    .texto-meio p {
+        font-size: 16px;
+    }
+    
+    .texto-link a {
+        font-size: 16px; 
+    }
+    
 }
 
 /* Dispositivos pequenos (celulares modo paisagem, 576px e acima) */
@@ -482,6 +501,32 @@ a.separador:nth-child(5) {
     .login-celular {
         display: none;
     }
+    
+    .banner {
+        background-image: url(../Imagens/Imagem\ Tocha-tablet.png);
+        width: 100%;
+        height: 505px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .container-banner {
+        align-items: center;
+    }
+    /* ------TEXTOS BANNER------ */
+    .texto-discover h1 {
+        font-size: 36px;
+    }
+    
+    .texto-meio p {
+        font-size: 27px;
+    }
+    
+    .texto-link a {
+        font-size: 27px; 
+    }
+    /* ------TEXTOS BANNER------ */
+
 }
 
 /* Dispositivos medianos (tablets, 768px e acima) */
@@ -522,6 +567,16 @@ a.separador:nth-child(5) {
         display: none;
     }
 
+     .banner {
+        background-image: url(../Imagens/Imagem\ Tocha-tablet.png);
+        height: 674px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .container-banner {
+        align-items: center;
+    }
 }
 
 /* Dispositivos grandes (desktops, 992px e acima) */
