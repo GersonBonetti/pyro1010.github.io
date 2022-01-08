@@ -258,21 +258,13 @@ que teria seu estilo mudado, pois não ia de jeito nenhum */
     background-color: #E6E8FF;
 }
 
-.container-produtos {
-    height: 100%;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
 .jogos {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    column-gap: 80px;
 }
 
 .jogos img {
@@ -465,6 +457,31 @@ a.separador:nth-child(5) {
     .texto-link a {
         font-size: 16px; 
     }
+
+     /* AREA PRODUTOS */
+     .back-destaque-up {
+        height: 892px;
+    }
+
+    .jogos {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .jogos img {
+        width: 185px;
+        height: 240px;
+    }
+
+    .back-destaque {
+        height: 37px;
+        font-size: 14px;
+    }
+
+    .back-destaque-down {
+        height: 1741px;
+    }
+    /* AREA PRODUTOS */
     
 }
 
@@ -513,7 +530,7 @@ a.separador:nth-child(5) {
     .container-banner {
         align-items: center;
     }
-    /* ------TEXTOS BANNER------ */
+    
     .texto-discover h1 {
         font-size: 36px;
     }
@@ -525,7 +542,25 @@ a.separador:nth-child(5) {
     .texto-link a {
         font-size: 27px; 
     }
-    /* ------TEXTOS BANNER------ */
+   
+    .back-destaque-up {
+        height: 300px;
+    }
+
+    .jogos img {
+        width: 118px;
+        height: 202px;
+    }
+
+    .back-destaque {
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .back-destaque-down {
+        height: 550px;
+        background-color: #E6E8FF;
+    }
 
 }
 
@@ -577,6 +612,25 @@ a.separador:nth-child(5) {
     .container-banner {
         align-items: center;
     }
+
+    .back-destaque-up {
+        height: 450px;
+    }
+
+    .jogos img {
+        width: 178px;
+        height: 270px;
+    }
+
+    .back-destaque {
+        height: 50px;
+        font-size: 24px;
+        }
+
+    .back-destaque-down {
+        height: 727px;
+        background-color: #E6E8FF;
+    }
 }
 
 /* Dispositivos grandes (desktops, 992px e acima) */
@@ -600,6 +654,11 @@ a.separador:nth-child(5) {
 
     .login-celular {
         display: none;
+    }
+
+    .jogos img {
+        width: 243px;
+        height: 360px;
     }
 
 }
