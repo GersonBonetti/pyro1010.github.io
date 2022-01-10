@@ -12,6 +12,8 @@ disse que geralmente ela é posta na primira linha do CSS */
     padding: 0;
     box-sizing: border-box;
 }
+
+
 /* O '*' é um seletor que seleciona todos os elementos dos HTML. 
 Nessa situaçao, ele está resetando algumas configurações do HTML.
     'Margin' é para zerar as margens da página, para não ficar aquela
@@ -282,7 +284,7 @@ que teria seu estilo mudado, pois não ia de jeito nenhum */
 }
 
 .container-footer {
-    width: 1200px;
+    width: 95%;
     height: 700px;
     display: flex;
     justify-content: space-around;
@@ -322,13 +324,13 @@ que teria seu estilo mudado, pois não ia de jeito nenhum */
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-size: 48px;
-    
 }
 
 .fim-footer {
     color: white;
     text-align: center;
     line-height: 16px;
+    padding-left: 0px;
 }
 
 .fim-footer a {
@@ -458,7 +460,6 @@ a.separador:nth-child(5) {
         font-size: 16px; 
     }
 
-     /* AREA PRODUTOS */
      .back-destaque-up {
         height: 892px;
     }
@@ -481,7 +482,6 @@ a.separador:nth-child(5) {
     .back-destaque-down {
         height: 1741px;
     }
-    /* AREA PRODUTOS */
     
 }
 
@@ -631,6 +631,68 @@ a.separador:nth-child(5) {
         height: 727px;
         background-color: #E6E8FF;
     }
+
+    .disappear {
+        display: none;
+    }
+
+    .container-resp {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .texto-footer a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 36px;
+    }
+
+    .texto-footer p {
+        color: white;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 36px;
+    }
+
+    .container-redes {
+        display: none;
+    }
+
+    .container-links {
+        display: none;
+    }
+
+    .container-footer {
+        justify-content: space-between;
+    }
+
+    .container-footer-meio-esquerda {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-footer-meio-up-direita {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container-footer-meio-direita {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .separador-tablet {
+        border-left: 3px solid #FFFFFF;
+    }
+
 }
 
 /* Dispositivos grandes (desktops, 992px e acima) */
@@ -661,6 +723,10 @@ a.separador:nth-child(5) {
         height: 360px;
     }
 
+    .disappear-tablet {
+        display: none
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -683,6 +749,10 @@ a.separador:nth-child(5) {
 
     .login-celular {
         display: none;
+    }
+
+    .disappear-tablet {
+        display: none
     }
 }
 
