@@ -371,8 +371,7 @@ a.separador:nth-child(5) {
 a.separador {
     padding-top: 0px;
     padding-bottom: 0px;
-}   
-
+}  
 
 /* ----------------INÍCIO MEDIA QUERIES----------------*/
 
@@ -588,7 +587,6 @@ a.separador {
         padding-bottom: 0px;
         border-left-width: 1px;
     }
-
 
 }
 
