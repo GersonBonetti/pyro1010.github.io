@@ -371,8 +371,35 @@ a.separador:nth-child(5) {
 a.separador {
     padding-top: 0px;
     padding-bottom: 0px;
-}  
+} 
 
+#divBusca {
+    background-color: #FFFFFF;
+    border: solid 3px;
+    border-radius: 30px;
+    width: 400px;
+    height: 40px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 366px;
+}
+
+#btnBusca {
+   width: 20px;
+   height: 20px;
+}
+
+input, textarea, select {
+    outline: 0;
+}
 /* ----------------INÍCIO MEDIA QUERIES----------------*/
 
 
@@ -398,7 +425,7 @@ a.separador {
         display: none;
     }
 
-    .logo-desktop {
+    .logo-desktop { 
         display: none;
     }
 
@@ -587,7 +614,6 @@ a.separador {
         padding-bottom: 0px;
         border-left-width: 1px;
     }
-
 }
 
 /* Dispositivos pequenos (celulares modo paisagem, 576px e acima) */
