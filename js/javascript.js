@@ -1,1 +1,1 @@
-console.log("vai poxa")
+window.alert("Mais um popup chato")
